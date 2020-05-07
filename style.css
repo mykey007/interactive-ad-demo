@@ -44,13 +44,13 @@ body {
 	height:460px;
 	margin:auto;
 
-	-webkit-animation-name: blinker;  
-	-webkit-animation-iteration-count: infinite;  
-	-webkit-animation-timing-function: cubic-bezier(1.0,0,0,1.0);
-	-webkit-animation-duration: 1.5s; 	
+	animation-name: blinker;  
+	animation-iteration-count: infinite;  
+	animation-timing-function: cubic-bezier(1.0,0,0,1.0);
+	animation-duration: 1.5s; 	
 }
 
-@-webkit-keyframes blinker {  
+@keyframes blinker {  
   from { opacity: 1.0; }
   to { opacity: 0.0; }
 }
@@ -66,13 +66,13 @@ body {
 	width:165px;
 	height:78px;
 
-	-webkit-animation-name: press-here;  
-	-webkit-animation-iteration-count: infinite;
-	-webkit-animation-duration: 0.5s; 	
-	-webkit-animation-direction: alternate;
+	animation-name: press-here;  
+	animation-iteration-count: infinite;
+	animation-duration: 0.5s; 	
+	animation-direction: alternate;
 }
 
-@-webkit-keyframes press-here {  
+@keyframes press-here {  
   from { left: 100px; }
   to { left: 120px; }
 }
@@ -99,14 +99,14 @@ body {
 	height:199px;
 	margin:auto;	
 
-	-webkit-animation-name: bottle2;  
-	-webkit-animation-iteration-count: infinite;
-	-webkit-animation-duration: 0.25s; 	
-	-webkit-animation-direction: alternate;
-	-webkit-animation-timing-function:ease-in-out;	
+	animation-name: bottle2;  
+	animation-iteration-count: infinite;
+	animation-duration: 0.25s; 	
+	animation-direction: alternate;
+	animation-timing-function:ease-in-out;	
 }
 
-@-webkit-keyframes bottle2 {  
+@keyframes bottle2 {  
   from { top: 110px; }
   to { top: 120px; }
 }
@@ -124,13 +124,13 @@ body {
 	margin:auto;
 
 	/*
-	-webkit-animation-name: facebook; 
-	-webkit-animation-iteration-count: 1; 
-	-webkit-animation-duration: 0.5s; 	
-	-webkit-animation-timing-function:ease-in-out;
-	-webkit-animation-fill-mode: forwards;		
+	animation-name: facebook; 
+	animation-iteration-count: 1; 
+	animation-duration: 0.5s; 	
+	animation-timing-function:ease-in-out;
+	animation-fill-mode: forwards;		
 	*/
-    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
 	-moz-animation-delay:1s;
 	-o-animation-delay:1s;
 	animation-delay:1s;
@@ -153,42 +153,42 @@ body {
 /* Animate.css */
 
 body { /* Addresses a small issue in webkit: http://bit.ly/NEdoDq */
-	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
 }
 .animated {
-	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
 	   -moz-animation-duration: 1s;
 	     -o-animation-duration: 1s;
 	        animation-duration: 1s;
-	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
 	   -moz-animation-fill-mode: both;
 	     -o-animation-fill-mode: both;
 	        animation-fill-mode: both;
 }
 
 .animated.bounceIn {
-	-webkit-animation-name: bounceIn;
+	animation-name: bounceIn;
 	-moz-animation-name: bounceIn;
 	-o-animation-name: bounceIn;
 	animation-name: bounceIn;
 }
-@-webkit-keyframes bounceInUp {
+@keyframes bounceInUp {
 	0% {
 		opacity: 0;
-		-webkit-transform: translateY(2000px);
+		transform: translateY(2000px);
 	}
 
 	60% {
 		opacity: 1;
-		-webkit-transform: translateY(-30px);
+		transform: translateY(-30px);
 	}
 
 	80% {
-		-webkit-transform: translateY(10px);
+		transform: translateY(10px);
 	}
 
 	100% {
-		-webkit-transform: translateY(0);
+		transform: translateY(0);
 	}
 }
 @-moz-keyframes bounceInUp {
@@ -252,29 +252,29 @@ body { /* Addresses a small issue in webkit: http://bit.ly/NEdoDq */
 }
 
 .animated.bounceInUp {
-	-webkit-animation-name: bounceInUp;
+	animation-name: bounceInUp;
 	-moz-animation-name: bounceInUp;
 	-o-animation-name: bounceInUp;
 	animation-name: bounceInUp;
 }
 
-@-webkit-keyframes bounceInLeft {
+@keyframes bounceInLeft {
 	0% {
 		opacity: 0;
-		-webkit-transform: translateX(-2000px);
+		transform: translateX(-2000px);
 	}
 
 	60% {
 		opacity: 1;
-		-webkit-transform: translateX(30px);
+		transform: translateX(30px);
 	}
 
 	80% {
-		-webkit-transform: translateX(-10px);
+		transform: translateX(-10px);
 	}
 
 	100% {
-		-webkit-transform: translateX(0);
+		transform: translateX(0);
 	}
 }
 
@@ -339,7 +339,7 @@ body { /* Addresses a small issue in webkit: http://bit.ly/NEdoDq */
 }
 
 .animated.bounceInLeft {
-	-webkit-animation-name: bounceInLeft;
+	animation-name: bounceInLeft;
 	-moz-animation-name: bounceInLeft;
 	-o-animation-name: bounceInLeft;
 	animation-name: bounceInLeft;
