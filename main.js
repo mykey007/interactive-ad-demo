@@ -10,14 +10,14 @@ $.preload = function(){
 };
 
 $.preload( 
- 	'http://s3-ap-northeast-1.amazonaws.com/marketjs-lab/interactive-ad-template/media/bottle-glow.png',
-	'http://s3-ap-northeast-1.amazonaws.com/marketjs-lab/interactive-ad-template/media/bottle.png',
-	'http://s3-ap-northeast-1.amazonaws.com/marketjs-lab/interactive-ad-template/media/facebook.png',
-	'http://s3-ap-northeast-1.amazonaws.com/marketjs-lab/interactive-ad-template/media/final-words.png',	 			 		 		
-	'http://s3-ap-northeast-1.amazonaws.com/marketjs-lab/interactive-ad-template/media/pint.png',
-	'http://s3-ap-northeast-1.amazonaws.com/marketjs-lab/interactive-ad-template/media/press-here.png',
-	'http://s3-ap-northeast-1.amazonaws.com/marketjs-lab/interactive-ad-template/media/scene1.jpg',
-	'http://s3-ap-northeast-1.amazonaws.com/marketjs-lab/interactive-ad-template/media/scene2.jpg'
+    './media/bottle-glow.png',
+   './media/bottle.png',
+   './media/facebook.png',
+   './media/final-words.png',	 			 		 		
+   './media/pint.png',
+   './media/press-here.png',
+   './media/scene1.jpg',
+   './media/scene2.jpg'
 );
 
 function gotoScene2(){
